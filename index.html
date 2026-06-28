@@ -95,6 +95,21 @@
             font-size: 11px; font-weight: 800; display: inline-block; text-transform: uppercase;
         }
 
+        /* Web Portal AD Style */
+        @keyframes pulseBlue { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+        
+        .portal-ad-card {
+            background: linear-gradient(135deg, #007AFF 0%, #0056b3 100%);
+            border-radius: 16px; padding: 16px; text-align: center; color: white;
+            box-shadow: 0 10px 20px rgba(0, 122, 255, 0.2);
+            animation: pulseBlue 3s infinite ease-in-out;
+            text-decoration: none; display: block; margin-top: 10px;
+        }
+        .portal-btn {
+            background: white; color: #007AFF; padding: 8px 16px; border-radius: 99px;
+            font-size: 11px; font-weight: 800; display: inline-block; text-transform: uppercase;
+        }
+
         /* --- MAIN CONTENT --- */
         .main { flex: 1; display: flex; flex-direction: column; gap: 24px; min-width: 0; z-index: 50; }
 
@@ -298,6 +313,12 @@
                 </a>
             </div>
 
+            <a href="https://cm.echem.lk" target="_blank" class="portal-ad-card">
+                <span class="yt-title">Web Portal</span>
+                <span class="yt-sub">Click here to access your learning materials!</span>
+                <span class="portal-btn">GO TO PORTAL 🌐</span>
+            </a>
+    
             <a href="https://www.youtube.com/@combined_maths_vikum?sub_confirmation=1" target="_blank" class="yt-ad-card">
                 <span class="yt-title">YouTube</span>
                 <span class="yt-sub">Click here to subscribe for educational tutorials!</span>
