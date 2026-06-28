@@ -376,36 +376,33 @@
         const dayNamesSi = ["ඉරිදා", "සඳුදා", "අඟහරුවාදා", "බදාදා", "බ්‍රහස්පතින්දා", "සිකුරාදා", "සෙනසුරාදා"];
 
 const defaultSched = {
-            1: [
-                {s:'Maths Supportive', t:'Vikum Harshana', st:'20:00', en:'23:30', ty:'theory'}, 
-                {s:'Paper Class', t:'-', st:'00:00', en:'00:00', ty:'paper'}
-            ],
-            2: [
-                {s:'Paper Discussion', t:'Vikum Harshana', st:'10:00', en:'14:00', ty:'paper'},
-                {s:'Combined Maths (Main)', t:'Vikum Harshana', st:'15:00', en:'20:00', ty:'theory'}, 
-                {s:'Applied Maths', t:'Janaka Abeywardana', st:'19:00', en:'23:00', ty:'theory'}
-            ],
-            3: [
-                {s:'Theory Class', t:'-', st:'', en:'', ty:'theory'}, 
-                {s:'ICT Paper', t:'Bhanuka Ekanayaka', st:'16:30', en:'18:30', ty:'paper'}
-            ],
-            4: [
-                {s:'Physics Paper', t:'Anuradha Perera', st:'13:30', en:'18:30', ty:'paper'},
-                {s:'Rapid Revision', t:'Vikum Harshana', st:'18:00', en:'22:00', ty:'theory'}
-            ],
-            5: [
-                {s:'Combined Maths (Main)', t:'Vikum Harshana', st:'08:00', en:'13:00', ty:'theory'}, 
-                {s:'Paper Class', t:'Vikum Harshana', st:'19:00', en:'22:00', ty:'paper'}
-            ],
-            6: [
-                {s:'Theory Class', t:'-', st:'', en:'', ty:'theory'}, 
-                {s:'Maths Paper', t:'Ruwan Darshana', st:'08:00', en:'01:00', ty:'paper'}
-            ],
-            0: [
-                {s:'Final Revise', t:'Vikum Harshana', st:'08:00', en:'15:00', ty:'theory'}, 
-                {s:'Paper Class', t:'-', st:'', en:'', ty:'paper'}
-            ]
-        };
+    // 0 = ඉරිදා (Sunday)
+    0: [
+        {s:'Final Revise Program', t:'Vikum Harshana', st:'08:00', en:'15:00', ty:'theory'}
+    ],
+    // 1 = සඳුදා (Monday)
+    1: [
+        {s:'Maths Supportive Program', t:'Vikum Harshana', st:'20:00', en:'23:30', ty:'theory'}
+    ],
+    // 2 = අඟහරුවාදා (Tuesday)
+    2: [
+        {s:'Paper Discussion', t:'Vikum Harshana', st:'10:00', en:'14:00', ty:'paper'},
+        {s:'Main Revision', t:'Vikum Harshana', st:'15:00', en:'20:00', ty:'theory'}
+    ],
+    // 3 = බදාදා (Wednesday) - පන්ති නොමැත
+    3: [],
+    // 4 = බ්‍රහස්පතින්දා (Thursday)
+    4: [
+        {s:'Rapid Revision', t:'Vikum Harshana', st:'18:00', en:'22:00', ty:'theory'}
+    ],
+    // 5 = සිකුරාදා (Friday)
+    5: [
+        {s:'Main Revision', t:'Vikum Harshana', st:'08:00', en:'13:00', ty:'theory'},
+        {s:'Paper Class', t:'Vikum Harshana', st:'19:00', en:'22:00', ty:'paper'}
+    ],
+    // 6 = සෙනසුරාදා (Saturday) - පන්ති නොමැත
+    6: []
+};
 
         let sched = JSON.parse(localStorage.getItem('al_plan_final_v3')) || defaultSched;
 
